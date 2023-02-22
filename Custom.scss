@@ -1,0 +1,43 @@
+//custom variables
+$primary : rgb(86, 11, 101);
+$secondary: #6E6E6E;
+$info : dodgerblue;
+$danger : rgb(180, 4, 39);
+$success : #BCFD4C;
+$warning: #ff6600;
+
+
+// import bootstrap functions
+@import './node_modules/bootstrap/scss/_functions.scss';
+@import './node_modules/bootstrap/scss/_variables.scss';
+
+$custom-theme-colors: (
+    'alt-primary': $primary,
+    'alt-dark': rgb(45, 45, 45),
+    'cyan':#00cccc,
+    'dark-violet':#660033,
+    'pink': #ff0066
+);
+
+$theme-colors :map_merge($custom-theme-colors, $theme-colors);
+// import bootstrap
+
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+input.form-control:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.form-select:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+
+.form-floating label {
+    font-size: 13px;
+}
