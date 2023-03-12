@@ -1,9 +1,12 @@
 //custom variables
-$primary : rgb(86, 11, 101);
-$secondary: #6E6E6E;
+// $primary : rgb(86, 11, 101);
+// $primary: #6D28D9;
+$primary: linear-gradient(to bottom right, #9933ff 0%, #9900cc 100%);
+// $secondary: #6E6E6E;
+$secondary: #6B7280;
 $info : dodgerblue;
 $danger : rgb(180, 4, 39);
-$success : #BCFD4C;
+$success : #10B981;
 $warning: #ff6600;
 
 
@@ -13,10 +16,7 @@ $warning: #ff6600;
 
 $custom-theme-colors: (
     'alt-primary': $primary,
-    'alt-dark': rgb(45, 45, 45),
-    'cyan':#00cccc,
-    'dark-violet':#660033,
-    'pink': #ff0066
+    'alt-dark': rgb(45, 45, 45)
 );
 
 $theme-colors :map_merge($custom-theme-colors, $theme-colors);
